@@ -68,17 +68,17 @@ export const ContactPage = ({ onLogout }: ContactPageProps) => {
     {
       icon: MapPin,
       title: 'Address',
-      details: ['123 Cyber Street', 'Tech City, TC 12345', 'United States']
+      details: ['Faculty of Computing', ' Federal University Dutse', 'Department of Cyber Security']
     },
     {
       icon: Phone,
       title: 'Phone',
-      details: ['+1 (555) 123-4567', '+1 (555) 123-4568 (Fax)']
+      details: ['', '']
     },
     {
       icon: Mail,
       title: 'Email',
-      details: ['info@cybersec.edu', 'admissions@cybersec.edu', 'research@cybersec.edu']
+      details: ['info@cybersec.fud.edu.ng', 'admissions@cybersec.fud.edu.ng', 'research@cybersec.fud.edu.ng']
     },
     {
       icon: Clock,
@@ -215,7 +215,7 @@ export const ContactPage = ({ onLogout }: ContactPageProps) => {
                   <div className="text-center">
                     <MapPin className="h-8 w-8 text-primary mx-auto mb-2" />
                     <p className="text-sm text-muted-foreground">Interactive Map</p>
-                    <p className="text-xs text-muted-foreground">123 Cyber Street, Tech City</p>
+                    <p className="text-xs text-muted-foreground">Department of Cyber Security Federal University Dutse</p>
                   </div>
                 </div>
               </CardContent>

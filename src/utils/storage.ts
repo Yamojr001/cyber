@@ -78,9 +78,9 @@ export interface Attendance {
 const defaultCourses: Course[] = [
   {
     id: '1',
-    code: 'CS101',
-    name: 'Introduction to Cybersecurity',
-    description: 'Fundamental concepts of cybersecurity including threats, vulnerabilities, and basic protection mechanisms.',
+    code: 'COS202',
+    name: 'Computer Programming II',
+    description: 'Introduction to programming concepts using Python. Covers basic syntax, data structures, and algorithms.',
     creditHours: 3
   },
   {
@@ -92,23 +92,23 @@ const defaultCourses: Course[] = [
   },
   {
     id: '3',
-    code: 'CS301',
-    name: 'Cryptography and Data Protection',
-    description: 'Mathematical foundations of cryptography, encryption algorithms, and data protection strategies.',
-    creditHours: 3
+    code: 'FUD-CYB202',
+    name: 'Threats Attacks and Vulnerabilities',
+    description: 'Comprehensive study of various types of cyber threats, attack vectors, and vulnerabilities in systems.',
+    creditHours: 2
   },
   {
     id: '4',
-    code: 'CS401',
-    name: 'Digital Forensics',
-    description: 'Investigation techniques for digital crimes, evidence collection, and forensic analysis tools.',
-    creditHours: 4
+    code: 'FUD-CYB204',
+    name: 'Linux System Administration',
+    description: 'In-depth exploration of Linux operating system, including installation, configuration, and administration tasks.',
+    creditHours: 3
   },
   {
     id: '5',
-    code: 'CS501',
-    name: 'Ethical Hacking and Penetration Testing',
-    description: 'Hands-on experience with ethical hacking techniques and penetration testing methodologies.',
+    code: 'GST223',
+    name: 'Introduction to Entrepreneurship Studies',
+    description: 'Hands-on experience with entrepreneurial thinking, business model development, and startup methodologies.',
     creditHours: 3
   }
 ];
