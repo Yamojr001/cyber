@@ -2,41 +2,63 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Cyber Security Department Design System - Digital Fortress Theme */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Cyber Security Color Palette */
+    --background: 215 25% 7%;
+    --foreground: 210 40% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 217 19% 12%;
+    --card-foreground: 210 40% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 217 19% 12%;
+    --popover-foreground: 210 40% 98%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 195 100% 50%;
+    --primary-foreground: 215 25% 7%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 175 100% 42%;
+    --secondary-foreground: 215 25% 7%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 217 19% 18%;
+    --muted-foreground: 210 20% 65%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 260 100% 80%;
+    --accent-foreground: 215 25% 7%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 217 19% 18%;
+    --input: 217 19% 18%;
+    --ring: 195 100% 50%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Cyber Security Specific Colors */
+    --cyber-blue: 195 100% 50%;
+    --cyber-green: 175 100% 42%;
+    --cyber-purple: 260 100% 80%;
+    --cyber-dark: 215 25% 7%;
+    --cyber-darker: 215 30% 4%;
+    --cyber-light: 210 40% 98%;
+
+    /* Gradients */
+    --gradient-cyber: linear-gradient(135deg, hsl(var(--cyber-blue)), hsl(var(--cyber-green)));
+    --gradient-dark: linear-gradient(135deg, hsl(var(--cyber-dark)), hsl(var(--cyber-darker)));
+    --gradient-glow: linear-gradient(135deg, hsl(var(--cyber-blue) / 0.2), hsl(var(--cyber-green) / 0.2));
+
+    /* Shadows */
+    --shadow-cyber: 0 0 20px hsl(var(--cyber-blue) / 0.3);
+    --shadow-glow: 0 0 40px hsl(var(--cyber-green) / 0.2);
+    --shadow-card: 0 8px 32px hsl(var(--cyber-dark) / 0.4);
+
+    /* Animations */
+    --transition-cyber: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -100,6 +122,47 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
+    background: var(--gradient-dark);
+    min-height: 100vh;
+  }
+}
+
+@layer components {
+  .cyber-glow {
+    box-shadow: var(--shadow-cyber);
+    transition: var(--transition-cyber);
+  }
+
+  .cyber-glow:hover {
+    box-shadow: var(--shadow-glow);
+    transform: translateY(-2px);
+  }
+
+  .gradient-cyber {
+    background: var(--gradient-cyber);
+  }
+
+  .gradient-glow {
+    background: var(--gradient-glow);
+  }
+
+  .text-gradient {
+    background: var(--gradient-cyber);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .cyber-border {
+    border: 1px solid hsl(var(--cyber-blue) / 0.3);
+    box-shadow: 0 0 10px hsl(var(--cyber-blue) / 0.2);
+  }
+
+  .cyber-card {
+    background: hsl(var(--card));
+    border: 1px solid hsl(var(--border));
+    box-shadow: var(--shadow-card);
+    backdrop-filter: blur(10px);
   }
 }
