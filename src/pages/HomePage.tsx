@@ -43,19 +43,19 @@ export const HomePage = ({ onLogout }: HomePageProps) => {
 
   const facultyMembers = [
     {
-      name: 'Dr. Sarah Johnson',
+      name: 'Dr. ',
       position: 'Department Head',
       specialization: 'Network Security & Cryptography',
       image: '/placeholder.svg'
     },
     {
-      name: 'Prof. Michael Chen',
+      name: 'Prof. ',
       position: 'Senior Lecturer',
       specialization: 'Digital Forensics & Incident Response',
       image: '/placeholder.svg'
     },
     {
-      name: 'Dr. Emily Rodriguez',
+      name: 'Dr. ',
       position: 'Research Director',
       specialization: 'AI Security & Machine Learning',
       image: '/placeholder.svg'

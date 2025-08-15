@@ -34,7 +34,7 @@ const defaultUsers: (User & { password: string })[] = [
     password: 'staff123',
     email: 'staff@cybersec.edu',
     role: 'staff',
-    name: 'Dr. Sarah Johnson',
+    name: 'Dr. ',
     department: 'Cyber Security',
     staffId: 'STF001'
   },
@@ -44,7 +44,7 @@ const defaultUsers: (User & { password: string })[] = [
     password: 'lecturer123',
     email: 'lecturer@cybersec.edu',
     role: 'lecturer',
-    name: 'Prof. Michael Chen',
+    name: 'Prof. ',
     department: 'Cyber Security',
     staffId: 'LEC001',
     courses: ['CS101', 'CS201', 'CS301']

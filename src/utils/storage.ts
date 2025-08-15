@@ -118,14 +118,14 @@ const defaultNewsletters: Newsletter[] = [
     id: '1',
     title: 'Cybersecurity Awareness Month',
     content: 'October is recognized as National Cybersecurity Awareness Month. Join us for various workshops and seminars to enhance your cybersecurity knowledge.',
-    author: 'Dr. Sarah Johnson',
+    author: 'Dr. ',
     date: '2024-10-01'
   },
   {
     id: '2',
     title: 'New Research Lab Opening',
     content: 'We are excited to announce the opening of our new Advanced Cyber Defense Research Lab, equipped with state-of-the-art tools and technologies.',
-    author: 'Prof. Michael Chen',
+    author: 'Prof. ',
     date: '2024-09-15'
   }
 ];
@@ -152,7 +152,7 @@ const defaultEvents: Event[] = [
 const defaultTimetable: Timetable[] = [
   {
     id: '1',
-    courseCode: 'CS101',
+    courseCode: 'FUD-CYB 204',
     courseName: 'Introduction to Cybersecurity',
     day: 'Monday',
     time: '09:00-10:30',
@@ -161,12 +161,12 @@ const defaultTimetable: Timetable[] = [
   },
   {
     id: '2',
-    courseCode: 'CS201',
+    courseCode: 'CSC 202',
     courseName: 'Network Security',
     day: 'Tuesday',
     time: '11:00-12:30',
     room: 'Room 102',
-    lecturer: 'Dr. Sarah Johnson'
+    lecturer: 'Dr. '
   }
 ];
 
