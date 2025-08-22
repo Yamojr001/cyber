@@ -7,11 +7,11 @@ import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { getFromStorage, type Newsletter, type Event } from '@/utils/storage';
 import { getCurrentUser } from '@/utils/auth';
-import { 
-  Shield, 
-  Users, 
-  BookOpen, 
-  Award, 
+import {
+  Shield,
+  Users,
+  BookOpen,
+  Award,
   Calendar,
   Bell,
   ArrowRight,
@@ -135,8 +135,8 @@ export const HomePage = ({ onLogout }: HomePageProps) => {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground leading-relaxed">
-                  To provide world-class cybersecurity education that prepares students for the 
-                  evolving challenges of digital security. We foster innovation, critical thinking, 
+                  To provide world-class cybersecurity education that prepares students for the
+                  evolving challenges of digital security. We foster innovation, critical thinking,
                   and ethical responsibility in protecting our digital infrastructure and society.
                 </p>
               </CardContent>
@@ -151,8 +151,8 @@ export const HomePage = ({ onLogout }: HomePageProps) => {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground leading-relaxed">
-                  To be a global leader in cybersecurity education and research, producing 
-                  skilled professionals who will shape the future of digital security and 
+                  To be a global leader in cybersecurity education and research, producing
+                  skilled professionals who will shape the future of digital security and
                   create a safer cyberspace for all.
                 </p>
               </CardContent>
@@ -261,4 +261,5 @@ export const HomePage = ({ onLogout }: HomePageProps) => {
       <Footer />
     </div>
   );
+  
 };

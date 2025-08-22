@@ -24,7 +24,7 @@ const defaultUsers: (User & { password: string })[] = [
     password: 'student123',
     email: 'student@cybersec.edu',
     role: 'student',
-    name: 'John Smith',
+    name: 'Jamilu Yusuf Musa',
     department: 'Cyber Security',
     studentId: 'CS2024001'
   },
@@ -60,7 +60,7 @@ export const initializeAuth = () => {
 
 export const login = (credentials: LoginCredentials): User | null => {
   const users = JSON.parse(localStorage.getItem('users') || '[]');
-  const user = users.find((u: any) => 
+  const user = users.find((u: any) =>
     u.username === credentials.username && u.password === credentials.password
   );
   
